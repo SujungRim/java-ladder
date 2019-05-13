@@ -21,6 +21,10 @@ public class GameResults {
         return result.get(player);
     }
 
+    public BetItem find(String name) {
+        return find(match(name).get(0));
+    }
+
     public Map<Player, BetItem> getResult() {
         return result;
     }
